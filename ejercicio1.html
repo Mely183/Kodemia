@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: aqua;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      nav {
+        border: 3px solid blanchedalmond;
+      }
+
+      main {
+        background-color: blue;
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      main > article {
+        flex-basis: 30%;
+      }
+
+      aside {
+        background-color: blueviolet;
+        width: 20%;
+        height: 500px;
+        padding: 10px 30px;
+      }
+
+      main > aside:first-child {
+        margin-right: 20px;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>NAVBAR</nav>
+    </header>
+    <main>
+      <aside>
+        <p>ASIDE 1</p>
+      </aside>
+      <div>
+        DENTRO DEL MAIN
+        <article>ARTICULO 1</article>
+        <article>ARTICULO 2</article>
+        <article>ARTICULO 3</article>
+      </div>
+      <aside>
+        <p>ASIDE2</p>
+      </aside>
+    </main>
+    <footer>
+      <p>FOOTER</p>
+    </footer>
+  </body>
+</html>
